@@ -2,8 +2,8 @@ new Vue({
   el: "#app",
   data() {
     return {
-      num: 1,
-      num: 2,
+      num1: 0,
+      num2: 0,
       name: ""
     };
   }

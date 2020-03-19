@@ -9,14 +9,14 @@
   <body>
     <div id="app">
       <div class="row">
-        <span>1</span>
+        <span v-model.number="num1">{{num1}}</span>
         <span>+</span>
-        <span>1</span>
+        <span v-model.number="num2">{{num2}}</span>
         <span>=</span>
-        <span>2</span>
+        <span>{{num1 + num2 }}</span>
       </div>
       <div class="row second">
-        <p>My favorite kind of taco is Al Pastor</p>
+        <p>My favorite kind of taco is {{name}}</p>
       </div>
     </div>
 
