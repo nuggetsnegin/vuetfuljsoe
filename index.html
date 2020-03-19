@@ -9,14 +9,21 @@
   <body>
     <div id="app">
       <div class="row">
-        <span v-model.number="num1">{{num1}}</span>
+        <input v-model.number="num1" type="number"></input>
         <span>+</span>
-        <span v-model.number="num2">{{num2}}</span>
+        <input v-model.number="num2" type="number"></input>
         <span>=</span>
         <span>{{num1 + num2 }}</span>
       </div>
       <div class="row second">
-        <p>My favorite kind of taco is {{name}}</p>
+        <p>My favorite cat is: {{name}}</p>
+        <p>
+            <select v-model="name">
+                <option>Jiro 🐱</option>
+                <option>Jiji 😸</option>
+                <option>Redd 😹</option>
+            </select> 
+        </p>
       </div>
     </div>
 
